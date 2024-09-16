@@ -1,0 +1,145 @@
+/* loadingScreen */
+.loadingScreen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99999;
+    background-color: #0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    color: #fff;
+    font-size: 10px;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    text-indent: -9999em;
+    animation: mulShdSpin 1.3s infinite linear;
+    transform: translateZ(0);
+  }
+  
+  @keyframes mulShdSpin {
+    0%,
+    100% {
+      box-shadow: 0 -3em 0 0.2em, 
+      2em -2em 0 0em, 3em 0 0 -1em, 
+      2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 -1em, -3em 0 0 -1em, 
+      -2em -2em 0 0;
+    }
+    12.5% {
+      box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 
+      3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 -1em, -3em 0 0 -1em, 
+      -2em -2em 0 -1em;
+    }
+    25% {
+      box-shadow: 0 -3em 0 -0.5em, 
+      2em -2em 0 0, 3em 0 0 0.2em, 
+      2em 2em 0 0, 0 3em 0 -1em, 
+      -2em 2em 0 -1em, -3em 0 0 -1em, 
+      -2em -2em 0 -1em;
+    }
+    37.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+       3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, 
+       -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    50% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+       3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, 
+       -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    62.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+       3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, 
+       -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+    75% {
+      box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 
+      3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+    87.5% {
+      box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 
+      3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
+      -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+  }
+    
+/*  nav side  */
+.navSide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+}
+.navInner ul{
+    display: none;
+}
+.navInner li{
+    list-style: none;
+    padding-bottom: 20px;
+}
+.navInner a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+}
+.social{
+    padding: 0 20px;
+}
+.social span{
+    cursor: pointer;
+}
+.social footer p{
+    font-size: 18px;
+    line-height: 24px;
+}
+.navIcons i{
+    cursor: pointer;
+}
+
+/*   categories   */
+.item{
+    overflow: hidden;
+    cursor: pointer;
+}
+.layer{
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(100%);
+    transition: all .5s;
+}
+.item:hover .layer{
+    transform: translateY(0);
+}
+
+/*    area   */
+.areaIcons i{
+    font-size: 100px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+/* Ingredients */
+.Ingredients{
+  cursor: pointer;
+}
+.Ingredients i{
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.Ingredients p{
+    font-size: 18px;
+    /* line-height: 24px; */
+}
